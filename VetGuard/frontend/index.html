@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VetGuard – Disease Detector</title>
+
+    <!-- Correct CSS link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+    <h1>Disease Detector</h1>
+
+    <select id="animalSelect">
+        <option value="" disabled selected>Select Animal</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="cow">Cow</option>
+    </select>
+
+    <input type="file" id="imageUpload" accept="image/*">
+
+    <button onclick="predict()">Predict Disease</button>
+
+    <div id="loader" class="loader hidden"></div>
+
+    <div class="box" id="result"></div>
+    <div class="box" id="medicine"></div>
+</div>
+
+<!-- Correct JS link -->
+<script src="script.js"></script>
+
+</body>
+</html>
